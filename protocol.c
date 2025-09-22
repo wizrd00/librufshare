@@ -42,7 +42,7 @@ RecvPacket pack_RUFShare_RecvPacket(RUFShareACK ack, RUFShareCRC16 crc, RUFShare
     return packet;
 }
 
-CastPacket convert_CastPacket_byteorder(CastPacket* packet) {
+CastPacket convert_CastPacket_byteorder(CastPacket *packet) {
     CastPacket new_packet = {
         .type = ntohs(packet->type),
         .pad0 = 0,
@@ -51,7 +51,7 @@ CastPacket convert_CastPacket_byteorder(CastPacket* packet) {
     return new_packet;
 }
 
-FlowPacket convert_FlowPacket_byteorder(FlowPacket* packet) {
+FlowPacket convert_FlowPacket_byteorder(FlowPacket *packet) {
     FlowPacket new_packet = {
         .type = ntohs(packet->type),
         .pad0 = 0,
@@ -62,7 +62,7 @@ FlowPacket convert_FlowPacket_byteorder(FlowPacket* packet) {
     return new_packet;
 }
 
-SendPacket convert_SendPacket_byteorder(SendPacket* packet) {
+SendPacket convert_SendPacket_byteorder(SendPacket *packet) {
     SendPacket new_packet = {
         .type = ntohs(packet->type),
         .pad0 = 0,
@@ -74,7 +74,7 @@ SendPacket convert_SendPacket_byteorder(SendPacket* packet) {
     return new_packet;
 }
 
-RecvPacket convert_RecvPacket_byteorder(RecvPacket* packet) {
+RecvPacket convert_RecvPacket_byteorder(RecvPacket *packet) {
     RecvPacket new_packet = {
         .type = ntohs(packet->type),
         .ack = ntohs(packet->ack),
