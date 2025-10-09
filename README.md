@@ -14,7 +14,7 @@ Reliable UDP File Sharing protocol, implemented exclusively for Cyphare
     - [packet converter to host byte order](#packet-converter-to-host-byte-order)
 
 ## Protocol Specification
-RUFShare protocol splits into five types:  
+RUFShare protocol splits into five types :  
 - CAST
 - FLOW
 - SEND
